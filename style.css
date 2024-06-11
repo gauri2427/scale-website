@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 800;
+}
+section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    z-index: 2;
+}
+img{
+    width: 100%;
+}
+/*Navbar Css*/ 
+.navbar{
+    background-color: #fff;
+    height: 80px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+.navbar-brand{
+    font-weight: 500;
+    color: #009970;
+    font-size: 40px;
+    transition: 0.3s color;
+}
+.login-button{
+    background-color: #009970;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover{
+    background-color: #00b383;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    font-size: larger;
+}
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+.logo{
+    width: 50px;
+    transform: translateY(-6px);
+}
+.nav ul{
+    gap: 1rem;
+}
+
+
+/*Home css starts here*/
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Why Choose Us Section starts here*/
+.section-intro {
+    margin-bottom: 40px;
+}
+.section-intro .divider{
+    height: 4px;
+    width: 70px;
+    background: linear-gradient(to right, #00e0fe, #1107fe );
+    margin: 16px auto;
+}
+.features .feature-img{
+    position: relative;
+    border-radius: 100px;
+}
+.features .feature-img .icon{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: -45px;
+    border-radius: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .feature-img .icon i img{
+    border-radius: 100px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 45px;
+}
+.scroll-bg{
+    background: white;
+    margin: 10% auto;
+    border-radius: 20px;
+}
+.scroll-div{
+    background: white;
+    height: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+.scroll-object{
+    color: #000;
+    font-size: 15px;
+    padding-right: 9px;
+}
+
+
+
+
+
+.icons .icon-img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+.footer .container img{
+    width: 10px;
+    height: 10px;
+}
+
+
+
+
+.card {
+    border: none;
+    transition: transform 0.5s;
+    width: 45rem;
+    margin: 0 auto;
+  }
+
+.card:hover {
+    transform: scale(1.05);
+  }
+
+
+
+@media (max-width: 770px){
+.card {
+    transition: transform 0.5s;
+    width: 35rem;
+
+  }
+}
+@media (max-width: 600px){
+    .card {
+        transition: transform 0.5s;
+        width: 30rem;
+      }
+}
+
+@media (max-width: 550px)
+{
+    .card {
+        transition: transform 0.5s;
+        width: 25rem;
+    }
+}
+@media (max-width: 470px) {
+    .card {
+        transition: transform 0.5s;
+        width: 21rem;
+      }
+}
+@media (max-width: 375px)
+{
+    .carousel-indicators{
+        margin-bottom: -4px;
+    }
+    .logo{
+        width: 31px;
+    }
+    .navbar-brand{
+        font-size: 25px;
+    }
+    .login-button{
+        font-size: 10px;
+    }
+    .navbar-toggler{
+        font-size: 0.9rem;
+    }
+    .card {
+        transition: transform 0.5s;
+        width: 16rem;
+    }
+}
+
+@media (max-width: 330px)
+{
+    .card{
+        transition: transform 0.5s;
+        width: 14rem;
+    }
+}
+@media (max-width: 290px)
+{
+    .card{
+        transition: transform 0.5s;
+        width: 12rem;
+    }
+}
+@media (max-width: 250px)
+{
+    .logo{
+        width: 25px;
+    }
+    .navbar-brand{
+        font-size: 18px;
+    }
+    .login-button{
+        font-size: 8px;
+    }
+    .navbar-toggler{
+        font-size: 0.6rem;
+    }
+    .card {
+        transition: transform 0.5s;
+        width: 10rem;
+    }
+}
